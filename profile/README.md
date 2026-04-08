@@ -1,9 +1,11 @@
+<!-- Hero Banner -->
 <div align="center">
+  <img src="https://github.com/user-attachments/assets/30768baf-55a3-4af7-9622-d9398c2f62b7" width="100%" alt="AISquare Studio — AI governance and trust infrastructure" />
+</div>
 
-  <!-- Banner -->
-  <img src="banner.svg" width="100%" alt="AISquare Studio Banner" />
+<br/>
 
-  <br/><br/>
+<div align="center">
 
   <!-- Badges -->
   <a href="https://aisquare.studio"><img src="https://img.shields.io/badge/Website-aisquare.studio-0d9488?style=for-the-badge&logo=globe&logoColor=white" alt="Website" /></a>
@@ -27,6 +29,13 @@
 ---
 
 ## 🏗️ What We're Building
+
+<!-- AI Extends You — product showcase -->
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/96e9e4aa-9481-426e-9bb8-4e67628a3106" width="100%" alt="AI Extends You. It Never Replaces You — Book Appointments, Play Live Challenges, Connect Personally" />
+</div>
+
+<br/>
 
 <table>
   <tr>
@@ -121,6 +130,13 @@ Your agent framework handles reasoning. **AISquare handles the *"wait, should yo
 
 <br/>
 
+<!-- Platform visual -->
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4cfa262d-fb26-4102-a1be-1c24f3aaf37e" width="100%" alt="AISquare Studio platform" />
+</div>
+
+<br/>
+
 ---
 
 ## ⚡ Quick Start
@@ -189,6 +205,13 @@ Define workflows in YAML, stream events over SSE/WebSocket, and manage jobs thro
 ---
 
 ## 🤝 Get Involved
+
+<!-- Community visual -->
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/38ecea0c-684b-486a-85db-95da2d10a84e" width="100%" alt="AISquare Studio community and collaboration" />
+</div>
+
+<br/>
 
 <div align="center">
 
