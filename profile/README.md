@@ -1,0 +1,233 @@
+<div align="center">
+
+  <!-- Banner -->
+  <img src="banner.svg" width="100%" alt="AISquare Studio Banner" />
+
+  <br/><br/>
+
+  <!-- Badges -->
+  <a href="https://aisquare.studio"><img src="https://img.shields.io/badge/Website-aisquare.studio-0d9488?style=for-the-badge&logo=globe&logoColor=white" alt="Website" /></a>
+  <a href="https://docs.aisquare.studio"><img src="https://img.shields.io/badge/Docs-docs.aisquare.studio-2563eb?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Docs" /></a>
+  <a href="https://github.com/AISquare-Studio"><img src="https://img.shields.io/badge/Open_Source-Apache_2.0-f0883e?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="Open Source" /></a>
+  <a href="https://feedback.aisquare.studio"><img src="https://img.shields.io/badge/Feedback-Share_Ideas-7c3aed?style=for-the-badge&logo=git-extensions&logoColor=white" alt="Feedback" /></a>
+
+</div>
+
+<br/>
+
+## 🔷 About Us
+
+**AISquare Studio** builds the **governance layer for AI agents**. We create open-source tools that record _why_ AI decisions are made, enforce policies on what agents can do, and give humans structured workflows to review, approve, or intervene — without replacing your existing agent framework.
+
+> Think of us as the system of record for AI decisions, the same way financial systems track transactions.  
+> Except the transactions are *"the AI decided to email your CEO at 3 AM."*
+
+<br/>
+
+---
+
+## 🏗️ What We're Building
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">🛡️ Governance & Audit</h3>
+      <p align="center">Full decision audit trails for AI agents — every action logged, every policy enforced, every override documented.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🧪 Automated QA</h3>
+      <p align="center">Turn plain-English test descriptions into real Playwright tests — powered by AI, triggered from your PRs.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">⚙️ Agent Orchestration</h3>
+      <p align="center">Django-native framework for agentic workflows — DB-based job management, YAML pipelines, real-time event streaming.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🔌 SDK & Integrations</h3>
+      <p align="center">Client libraries and adapters for LangChain, CrewAI, AutoGen — plug governance into your existing stack.</p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
+## 📦 Our Repositories
+
+<p align="center">Click on a card to explore the project. ⭐ Star your favorites to show support!</p>
+
+<!-- Row 1: Flagship repos -->
+<div align="center">
+  <a href="https://github.com/AISquare-Studio/AISquare-Studio-QA">
+    <img src="pin-aisquare-studio-qa.svg" alt="AISquare-Studio-QA" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/AISquare-Studio/awesome-aisquare">
+    <img src="pin-awesome-aisquare.svg" alt="awesome-aisquare" />
+  </a>
+</div>
+
+<br/>
+
+<!-- Row 2: More repos -->
+<div align="center">
+  <a href="https://github.com/AISquare-Studio/django-ais">
+    <img src="pin-django-ais.svg" alt="django-ais" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/AISquare-Studio/aisquare">
+    <img src="pin-aisquare-sdk.svg" alt="aisquare SDK" />
+  </a>
+</div>
+
+<br/>
+
+<!-- Row 3 -->
+<div align="center">
+  <a href="https://github.com/AISquare-Studio/Opengrowth-Website">
+    <img src="pin-opengrowth-website.svg" alt="Opengrowth-Website" />
+  </a>
+</div>
+
+<br/>
+
+---
+
+## 🧩 How the Pieces Fit Together
+
+```
+┌─────────────────────┐     ┌────────────────────────┐     ┌───────────────────────┐
+│     Your Agent      │────▶│   AISquare Governance  │────▶│       AutoQA          │
+│  (any framework)    │     │   (audit + policy)     │     │  (test generation)    │
+└─────────────────────┘     └────────────────────────┘     └───────────────────────┘
+                                       │
+                                       ▼
+                            ┌────────────────────────┐
+                            │      django-ais        │
+                            │   (orchestration)      │
+                            └────────────────────────┘
+                                       │
+                                       ▼
+                            ┌────────────────────────┐
+                            │    AISquare SDK        │
+                            │  (client libraries)    │
+                            └────────────────────────┘
+```
+
+Your agent framework handles reasoning. **AISquare handles the *"wait, should you actually do that?"* part** — recording decisions, enforcing policies, and routing to human review. **AutoQA** validates behavior through generated tests. **django-ais** orchestrates multi-step workflows inside Django.
+
+<br/>
+
+---
+
+## ⚡ Quick Start
+
+### AutoQA — AI-powered test generation in your PRs
+
+```yaml
+# .github/workflows/autoqa.yml
+name: AutoQA
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  autoqa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: AISquare-Studio/AISquare-Studio-QA@main
+        with:
+          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+          staging_url: ${{ secrets.STAGING_URL }}
+          mode: generate
+```
+
+Write tests in plain English inside your PR body, and AutoQA turns them into real Playwright tests. ✨
+
+<br/>
+
+### django-ais — agentic workflows in Django
+
+```bash
+pip install django-ais
+```
+
+```python
+from django_ais import Worker
+
+class SummaryWorker(Worker):
+    name = "summarizer"
+
+    def execute(self, job):
+        return {"summary": summarize(job.payload["text"])}
+```
+
+Define workflows in YAML, stream events over SSE/WebSocket, and manage jobs through the Django ORM.
+
+<br/>
+
+---
+
+## 🗺️ Roadmap
+
+- [x] **AutoQA GitHub Action** — AI-powered test generation from PR descriptions
+- [x] **django-ais** — Django-native orchestration for agentic workflows
+- [x] **awesome-aisquare** — Ecosystem hub with quickstarts and documentation
+- [x] **AISquare SDK** — Client libraries for direct API integration
+- [ ] **aisquare-examples** — Runnable governance scenario examples
+- [ ] **aisquare-templates** — Starter scaffolds for governed AI apps
+- [ ] **aisquare-integrations** — Adapters for LangChain, CrewAI, AutoGen
+- [ ] **Dashboard** — Visual interface for audit trail exploration
+- [ ] **Policy Engine v2** — Advanced rule builder for agent constraints
+
+<br/>
+
+---
+
+## 🤝 Get Involved
+
+<div align="center">
+
+  <a href="https://github.com/AISquare-Studio/awesome-aisquare/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/🤝_Contributing-Guidelines-16a34a?style=for-the-badge" alt="Contributing" /></a>
+  <a href="https://github.com/orgs/AISquare-Studio/discussions"><img src="https://img.shields.io/badge/💬_Discussions-Join_Us-58a6ff?style=for-the-badge" alt="Discussions" /></a>
+  <a href="https://feedback.aisquare.studio"><img src="https://img.shields.io/badge/💡_Feedback-Share_Ideas-ea580c?style=for-the-badge" alt="Feedback" /></a>
+
+</div>
+
+<br/>
+
+We welcome contributions across the entire ecosystem! Look for issues tagged **"good first issue"** across any of our repos — it's the perfect entry point.
+
+<br/>
+
+---
+
+## 📬 Community & Support
+
+| Channel | Link |
+|:--------|:-----|
+| 📖 **Documentation** | [docs.aisquare.studio](https://docs.aisquare.studio) |
+| 🔌 **API Reference** | [docs.aisquare.studio/api-reference](https://docs.aisquare.studio/api-reference) |
+| 🌐 **Website** | [aisquare.studio](https://aisquare.studio) |
+| 💬 **Discussions** | [GitHub Discussions](https://github.com/orgs/AISquare-Studio/discussions) |
+| 💡 **Feedback** | [feedback.aisquare.studio](https://feedback.aisquare.studio) |
+| 🔒 **Security** | [Responsible Disclosure](https://github.com/AISquare-Studio/awesome-aisquare/blob/main/SECURITY.md) |
+| ✉️ **Email** | [bots@aisquare.com](mailto:bots@aisquare.com) |
+
+<br/>
+
+---
+
+<div align="center">
+
+  <sub>Built with ❤️ by the <b>AISquare Studio</b> team — because your AI agents deserve accountability.</sub>
+
+  <br/><br/>
+
+  <a href="https://github.com/AISquare-Studio"><img src="https://img.shields.io/badge/AISquare_Studio-Follow_Us-0d1117?style=flat-square&logo=github&logoColor=white" alt="Follow Us" /></a>
+
+</div>
