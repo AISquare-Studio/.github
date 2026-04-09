@@ -30,7 +30,7 @@
 
 <div align="center">
   <picture>
-    <img src="https://github.com/user-attachments/assets/30768baf-55a3-4af7-9622-d9398c2f62b7" width="100%" style="border-radius: 12px;" alt="AISquare Studio — AI governance and trust infrastructure" />
+    <img src="https://github.com/user-attachments/assets/30768baf-55a3-4af7-9622-d9398c2f62b7" width="100%" style="border-radius: 12px;" alt="AISquare Studio product overview — governance, audit, and trust for AI agents" />
   </picture>
 </div>
 
