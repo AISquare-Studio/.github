@@ -1,6 +1,8 @@
 <!-- Hero Banner -->
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/30768baf-55a3-4af7-9622-d9398c2f62b7" width="100%" alt="AISquare Studio — AI governance and trust infrastructure" />
+  <picture>
+    <img src="https://github.com/user-attachments/assets/30768baf-55a3-4af7-9622-d9398c2f62b7" width="100%" style="border-radius: 12px;" alt="AISquare Studio — AI governance and trust infrastructure" />
+  </picture>
 </div>
 
 <br/>
@@ -26,13 +28,24 @@
 
 <br/>
 
+<!-- Style showcase -->
+<div align="center">
+  <picture>
+    <img src="https://github.com/user-attachments/assets/20954795-e03a-4bad-b1ef-cde0f9534c16" width="100%" style="border-radius: 12px;" alt="AISquare Studio — AI-powered governance and trust infrastructure" />
+  </picture>
+</div>
+
+<br/>
+
 ---
 
 ## 🏗️ What We're Building
 
 <!-- AI Extends You — product showcase -->
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/96e9e4aa-9481-426e-9bb8-4e67628a3106" width="100%" alt="AI Extends You. It Never Replaces You — Book Appointments, Play Live Challenges, Connect Personally" />
+  <picture>
+    <img src="https://github.com/user-attachments/assets/96e9e4aa-9481-426e-9bb8-4e67628a3106" width="100%" style="border-radius: 12px;" alt="AI Extends You. It Never Replaces You — Book Appointments, Play Live Challenges, Connect Personally" />
+  </picture>
 </div>
 
 <br/>
@@ -132,7 +145,9 @@ Your agent framework handles reasoning. **AISquare handles the *"wait, should yo
 
 <!-- Platform visual -->
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/4cfa262d-fb26-4102-a1be-1c24f3aaf37e" width="100%" alt="AISquare Studio platform" />
+  <picture>
+    <img src="https://github.com/user-attachments/assets/4cfa262d-fb26-4102-a1be-1c24f3aaf37e" width="100%" style="border-radius: 12px;" alt="AISquare Studio platform" />
+  </picture>
 </div>
 
 <br/>
@@ -208,7 +223,9 @@ Define workflows in YAML, stream events over SSE/WebSocket, and manage jobs thro
 
 <!-- Community visual -->
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/38ecea0c-684b-486a-85db-95da2d10a84e" width="100%" alt="AISquare Studio community and collaboration" />
+  <picture>
+    <img src="https://github.com/user-attachments/assets/38ecea0c-684b-486a-85db-95da2d10a84e" width="100%" style="border-radius: 12px;" alt="AISquare Studio community and collaboration" />
+  </picture>
 </div>
 
 <br/>
