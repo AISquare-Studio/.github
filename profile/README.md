@@ -1,5 +1,11 @@
 <!-- Hero Banner -->
+<div align="center">
+  <picture>
+    <img src="https://github.com/user-attachments/assets/d28e5ca5-e41b-4634-b2ae-7b5e9d7aa322" width="100%" style="border-radius: 12px;" alt="AISquare — AI governance and trust infrastructure" />
+  </picture>
+</div>
 
+<br/>
 
 <div align="center">
 
@@ -122,6 +128,17 @@ We welcome contributions across the entire ecosystem! Look for issues tagged **"
 <br/>
 
 ---
+
+<!-- Ecosystem Map Banner -->
+<div align="center">
+  <a href="https://github.com/AISquare-Studio/awesome-aisquare">
+    <picture>
+      <img src="banner-ecosystem.svg" width="100%" alt="Explore Our Ecosystem Map — awesome-aisquare" />
+    </picture>
+  </a>
+</div>
+
+<br/>
 
 <div align="center">
 
