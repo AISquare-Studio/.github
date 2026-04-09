@@ -31,7 +31,7 @@
 <!-- Style showcase -->
 <div align="center">
   <picture>
-    <img src="https://github.com/user-attachments/assets/20954795-e03a-4bad-b1ef-cde0f9534c16" width="100%" style="border-radius: 12px;" alt="AISquare Studio — AI-powered governance and trust infrastructure" />
+    <img src="https://github.com/user-attachments/assets/20954795-e03a-4bad-b1ef-cde0f9534c16" width="100%" style="border-radius: 12px;" alt="Screenshot showcasing AISquare Studio product design and visual style" />
   </picture>
 </div>
 
