@@ -1,11 +1,5 @@
 <!-- Hero Banner -->
-<div align="center">
-  <picture>
-    <img src="https://github.com/user-attachments/assets/30768baf-55a3-4af7-9622-d9398c2f62b7" width="100%" style="border-radius: 12px;" alt="AISquare Studio — AI governance and trust infrastructure" />
-  </picture>
-</div>
 
-<br/>
 
 <div align="center">
 
@@ -28,18 +22,15 @@
 
 <br/>
 
----
-
-## 🏗️ What We're Building
-
-<!-- AI Extends You — product showcase -->
 <div align="center">
   <picture>
-    <img src="https://github.com/user-attachments/assets/96e9e4aa-9481-426e-9bb8-4e67628a3106" width="100%" style="border-radius: 12px;" alt="AI Extends You. It Never Replaces You — Book Appointments, Play Live Challenges, Connect Personally" />
+    <img src="https://github.com/user-attachments/assets/30768baf-55a3-4af7-9622-d9398c2f62b7" width="100%" style="border-radius: 12px;" alt="AISquare Studio — AI governance and trust infrastructure" />
   </picture>
 </div>
 
 <br/>
+
+
 
 <table>
   <tr>
@@ -66,7 +57,7 @@
 
 <br/>
 
----
+
 
 ## 📦 Our Repositories
 
@@ -107,220 +98,8 @@
 
 <br/>
 
----
 
-## 🧩 How the Pieces Fit Together
 
-```
-┌─────────────────────┐     ┌────────────────────────┐     ┌───────────────────────┐
-│     Your Agent      │────▶│   AISquare Governance  │────▶│       AutoQA          │
-│  (any framework)    │     │   (audit + policy)     │     │  (test generation)    │
-└─────────────────────┘     └────────────────────────┘     └───────────────────────┘
-                                       │
-                                       ▼
-                            ┌────────────────────────┐
-                            │      django-ais        │
-                            │   (orchestration)      │
-                            └────────────────────────┘
-                                       │
-                                       ▼
-                            ┌────────────────────────┐
-                            │    AISquare SDK        │
-                            │  (client libraries)    │
-                            └────────────────────────┘
-```
-
-Your agent framework handles reasoning. **AISquare handles the *"wait, should you actually do that?"* part** — recording decisions, enforcing policies, and routing to human review. **AutoQA** validates behavior through generated tests. **django-ais** orchestrates multi-step workflows inside Django.
-
-<br/>
-
-<!-- Platform visual -->
-<div align="center">
-  <picture>
-    <img src="https://github.com/user-attachments/assets/4cfa262d-fb26-4102-a1be-1c24f3aaf37e" width="100%" style="border-radius: 12px;" alt="AISquare Studio platform" />
-  </picture>
-</div>
-
-<br/>
-
----
-
-## ⚡ Quick Start
-
-### AutoQA — AI-powered test generation in your PRs
-
-```yaml
-# .github/workflows/autoqa.yml
-name: AutoQA
-on:
-  pull_request:
-    types: [opened, edited, synchronize]
-
-jobs:
-  autoqa:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: AISquare-Studio/AISquare-Studio-QA@main
-        with:
-          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
-          staging_url: ${{ secrets.STAGING_URL }}
-          mode: generate
-```
-
-Write tests in plain English inside your PR body, and AutoQA turns them into real Playwright tests. ✨
-
-<br/>
-
-### django-ais — agentic workflows in Django
-
-```bash
-pip install django-ais
-```
-
-```python
-from django_ais import Worker
-
-class SummaryWorker(Worker):
-    name = "summarizer"
-
-    def execute(self, job):
-        return {"summary": summarize(job.payload["text"])}
-```
-
-Define workflows in YAML, stream events over SSE/WebSocket, and manage jobs through the Django ORM.
-
-<br/>
-
----
-
-## 🗺️ Roadmap
-
-<p align="center">
-  💡 Click on a card to explore the task progress<br/>
-  🤝 Your reactions guide development! Add a ❤️ to your favorite features
-</p>
-
-<!-- Status summary -->
-<div align="center">
-<table>
-<tr>
-<td align="center"><img src="https://img.shields.io/badge/💡_idea-8b5cf6?style=flat-square" alt="idea" /><br/><h3>2</h3></td>
-<td align="center"><img src="https://img.shields.io/badge/📋_planned-3b82f6?style=flat-square" alt="planned" /><br/><h3>2</h3></td>
-<td align="center"><img src="https://img.shields.io/badge/🔨_in_progress-f59e0b?style=flat-square" alt="in progress" /><br/><h3>1</h3></td>
-<td align="center"><img src="https://img.shields.io/badge/✅_done-22c55e?style=flat-square" alt="done" /><br/><h3>4</h3></td>
-</tr>
-</table>
-</div>
-
-<!-- Roadmap cards -->
-<table width="100%">
-
-<tr><td>
-<h4>🟢 <a href="https://github.com/AISquare-Studio/AISquare-Studio-QA">AutoQA GitHub Action</a></h4>
-<img src="https://img.shields.io/badge/status:done-22c55e?style=flat-square" alt="status:done" />
-<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
-<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
-🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 <b>100%</b> complete<br/>
-<sub>AI-powered test generation from PR descriptions</sub>
-</td></tr>
-
-<tr><td>
-<h4>🟢 <a href="https://github.com/AISquare-Studio/django-ais">django-ais</a></h4>
-<img src="https://img.shields.io/badge/status:done-22c55e?style=flat-square" alt="status:done" />
-<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
-<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
-🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 <b>100%</b> complete<br/>
-<sub>Django-native orchestration for agentic workflows</sub>
-</td></tr>
-
-<tr><td>
-<h4>🟢 <a href="https://github.com/AISquare-Studio/awesome-aisquare">awesome-aisquare</a></h4>
-<img src="https://img.shields.io/badge/status:done-22c55e?style=flat-square" alt="status:done" />
-<img src="https://img.shields.io/badge/prio:medium-f97316?style=flat-square" alt="prio:medium" />
-<img src="https://img.shields.io/badge/type:docs-16a34a?style=flat-square" alt="type:docs" /><br/>
-🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 <b>100%</b> complete<br/>
-<sub>Ecosystem hub with quickstarts and documentation</sub>
-</td></tr>
-
-<tr><td>
-<h4>🟢 <a href="https://github.com/AISquare-Studio/aisquare">AISquare SDK</a></h4>
-<img src="https://img.shields.io/badge/status:done-22c55e?style=flat-square" alt="status:done" />
-<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
-<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
-🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 <b>100%</b> complete<br/>
-<sub>Client libraries for direct API integration</sub>
-</td></tr>
-
-<tr><td>
-<h4>🟡 aisquare-examples</h4>
-<img src="https://img.shields.io/badge/status:in_progress-f59e0b?style=flat-square" alt="status:in_progress" />
-<img src="https://img.shields.io/badge/prio:medium-f97316?style=flat-square" alt="prio:medium" />
-<img src="https://img.shields.io/badge/type:docs-16a34a?style=flat-square" alt="type:docs" /><br/>
-🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜ <b>30%</b> complete · 3 done · 7 to do<br/>
-<sub>Runnable governance scenario examples</sub>
-</td></tr>
-
-<tr><td>
-<h4>🔵 aisquare-templates</h4>
-<img src="https://img.shields.io/badge/status:planned-3b82f6?style=flat-square" alt="status:planned" />
-<img src="https://img.shields.io/badge/prio:medium-f97316?style=flat-square" alt="prio:medium" />
-<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
-⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ <b>0%</b> complete<br/>
-<sub>Starter scaffolds for governed AI apps</sub>
-</td></tr>
-
-<tr><td>
-<h4>🔵 aisquare-integrations</h4>
-<img src="https://img.shields.io/badge/status:planned-3b82f6?style=flat-square" alt="status:planned" />
-<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
-<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
-⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ <b>0%</b> complete<br/>
-<sub>Adapters for LangChain, CrewAI, AutoGen</sub>
-</td></tr>
-
-<tr><td>
-<h4>🟣 Dashboard</h4>
-<img src="https://img.shields.io/badge/status:idea-8b5cf6?style=flat-square" alt="status:idea" />
-<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
-<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
-<sub>Visual interface for audit trail exploration</sub>
-</td></tr>
-
-<tr><td>
-<h4>🟣 Policy Engine v2</h4>
-<img src="https://img.shields.io/badge/status:idea-8b5cf6?style=flat-square" alt="status:idea" />
-<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
-<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
-<sub>Advanced rule builder for agent constraints</sub>
-</td></tr>
-
-</table>
-
-<br/>
-
----
-
-## 🤝 Get Involved
-
-<!-- Community visual -->
-<div align="center">
-  <picture>
-    <img src="https://github.com/user-attachments/assets/38ecea0c-684b-486a-85db-95da2d10a84e" width="100%" style="border-radius: 12px;" alt="AISquare Studio community and collaboration" />
-  </picture>
-</div>
-
-<br/>
-
-<div align="center">
-
-  <a href="https://github.com/AISquare-Studio/awesome-aisquare/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/🤝_Contributing-Guidelines-16a34a?style=for-the-badge" alt="Contributing" /></a>
-  <a href="https://github.com/orgs/AISquare-Studio/discussions"><img src="https://img.shields.io/badge/💬_Discussions-Join_Us-58a6ff?style=for-the-badge" alt="Discussions" /></a>
-  <a href="https://feedback.aisquare.studio"><img src="https://img.shields.io/badge/💡_Feedback-Share_Ideas-ea580c?style=for-the-badge" alt="Feedback" /></a>
-
-</div>
-
-<br/>
 
 We welcome contributions across the entire ecosystem! Look for issues tagged **"good first issue"** across any of our repos — it's the perfect entry point.
 
