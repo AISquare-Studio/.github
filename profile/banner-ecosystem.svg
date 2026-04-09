@@ -20,34 +20,11 @@
     <polygon points="1080,120 1105,105 1130,120 1130,150 1105,165 1080,150" />
   </g>
 
-  <!-- AISquare logo mark — three interlocking blades forming a hexagon -->
-  <g transform="translate(579, 16)" fill="none" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
-    <!-- The logo is a hexagonal shape composed of three parallelogram blades
-         arranged in a pinwheel/turbine pattern, creating a triangular hole in the center.
-         Each blade connects two outer hex vertices through a curved/angled path. -->
-    <g transform="translate(0,0)">
-      <!-- Outer hexagon guide (invisible) — vertices at:
-           Top: 21,0  TopRight: 42,12  BotRight: 42,36  Bot: 21,48  BotLeft: 0,36  TopLeft: 0,12 -->
-
-      <!-- Top-right blade: from top vertex, sweeps right and down -->
-      <path d="M 21,1 L 40,12 L 40,33 L 27,18 Z" fill="#ffffff" stroke="none" opacity="0.9" />
-
-      <!-- Bottom blade: from bottom-right, sweeps left and down -->
-      <path d="M 40,33 L 21,47 L 2,36 L 21,24 Z" fill="#ffffff" stroke="none" opacity="0.9" />
-
-      <!-- Top-left blade: from top-left, sweeps up -->
-      <path d="M 2,36 L 2,15 L 21,1 L 15,24 Z" fill="#ffffff" stroke="none" opacity="0.9" />
-
-      <!-- Center triangular gap — cut out for contrast -->
-      <polygon points="27,18 21,24 15,24" fill="#0b1120" stroke="none" />
-    </g>
-  </g>
-
   <!-- Title -->
-  <text x="600" y="115" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="30" font-weight="bold" letter-spacing="0.5">Explore Our Open Source Ecosystem Map</text>
+  <text x="600" y="90" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="30" font-weight="bold" letter-spacing="0.5">Explore Our Open Source Ecosystem Map</text>
 
   <!-- Subtitle -->
-  <text x="600" y="148" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="15" letter-spacing="0.3">awesome-aisquare · Quickstarts, guides, integrations &amp; community resources →</text>
+  <text x="600" y="123" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="15" letter-spacing="0.3">awesome-aisquare · Quickstarts, guides, integrations &amp; community resources →</text>
 
   <!-- Thin bottom accent line matching navy -->
   <rect x="400" y="170" width="400" height="1.5" rx="1" fill="#ffffff" opacity="0.1" />
