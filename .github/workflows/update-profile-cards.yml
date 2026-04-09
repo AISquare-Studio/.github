@@ -1,0 +1,64 @@
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "0 0 * * 1" # Runs once weekly on Monday at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update-cards:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate AISquare-Studio-QA pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=AISquare-Studio&repo=AISquare-Studio-QA&theme=dark&show_owner=true&title_color=f0883e
+          path: profile/pin-aisquare-studio-qa.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate awesome-aisquare pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=AISquare-Studio&repo=awesome-aisquare&theme=dark&show_owner=true&title_color=f0883e
+          path: profile/pin-awesome-aisquare.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate django-ais pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=AISquare-Studio&repo=django-ais&theme=dark&show_owner=true&title_color=f0883e
+          path: profile/pin-django-ais.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate aisquare SDK pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=AISquare-Studio&repo=aisquare&theme=dark&show_owner=true&title_color=f0883e
+          path: profile/pin-aisquare-sdk.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Opengrowth-Website pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=AISquare-Studio&repo=Opengrowth-Website&theme=dark&show_owner=true&title_color=f0883e
+          path: profile/pin-opengrowth-website.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore: update organization profile repo cards" || exit 0
+          git push
