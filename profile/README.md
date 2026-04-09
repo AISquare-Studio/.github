@@ -28,15 +28,6 @@
 
 <br/>
 
-<!-- Style showcase -->
-<div align="center">
-  <picture>
-    <img src="https://github.com/user-attachments/assets/20954795-e03a-4bad-b1ef-cde0f9534c16" width="100%" style="border-radius: 12px;" alt="Screenshot showcasing AISquare Studio product design and visual style" />
-  </picture>
-</div>
-
-<br/>
-
 ---
 
 ## 🏗️ What We're Building
@@ -205,15 +196,106 @@ Define workflows in YAML, stream events over SSE/WebSocket, and manage jobs thro
 
 ## 🗺️ Roadmap
 
-- [x] **AutoQA GitHub Action** — AI-powered test generation from PR descriptions
-- [x] **django-ais** — Django-native orchestration for agentic workflows
-- [x] **awesome-aisquare** — Ecosystem hub with quickstarts and documentation
-- [x] **AISquare SDK** — Client libraries for direct API integration
-- [ ] **aisquare-examples** — Runnable governance scenario examples
-- [ ] **aisquare-templates** — Starter scaffolds for governed AI apps
-- [ ] **aisquare-integrations** — Adapters for LangChain, CrewAI, AutoGen
-- [ ] **Dashboard** — Visual interface for audit trail exploration
-- [ ] **Policy Engine v2** — Advanced rule builder for agent constraints
+<p align="center">
+  💡 Click on a card to explore the task progress<br/>
+  🤝 Your reactions guide development! Add a ❤️ to your favorite features
+</p>
+
+<!-- Status summary -->
+<div align="center">
+<table>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/💡_idea-8b5cf6?style=flat-square" alt="idea" /><br/><h3>2</h3></td>
+<td align="center"><img src="https://img.shields.io/badge/📋_planned-3b82f6?style=flat-square" alt="planned" /><br/><h3>2</h3></td>
+<td align="center"><img src="https://img.shields.io/badge/🔨_in_progress-f59e0b?style=flat-square" alt="in progress" /><br/><h3>1</h3></td>
+<td align="center"><img src="https://img.shields.io/badge/✅_done-22c55e?style=flat-square" alt="done" /><br/><h3>4</h3></td>
+</tr>
+</table>
+</div>
+
+<!-- Roadmap cards -->
+<table width="100%">
+
+<tr><td>
+<h4>🟢 <a href="https://github.com/AISquare-Studio/AISquare-Studio-QA">AutoQA GitHub Action</a></h4>
+<img src="https://img.shields.io/badge/status:done-22c55e?style=flat-square" alt="status:done" />
+<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
+<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
+🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 <b>100%</b> complete<br/>
+<sub>AI-powered test generation from PR descriptions</sub>
+</td></tr>
+
+<tr><td>
+<h4>🟢 <a href="https://github.com/AISquare-Studio/django-ais">django-ais</a></h4>
+<img src="https://img.shields.io/badge/status:done-22c55e?style=flat-square" alt="status:done" />
+<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
+<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
+🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 <b>100%</b> complete<br/>
+<sub>Django-native orchestration for agentic workflows</sub>
+</td></tr>
+
+<tr><td>
+<h4>🟢 <a href="https://github.com/AISquare-Studio/awesome-aisquare">awesome-aisquare</a></h4>
+<img src="https://img.shields.io/badge/status:done-22c55e?style=flat-square" alt="status:done" />
+<img src="https://img.shields.io/badge/prio:medium-f97316?style=flat-square" alt="prio:medium" />
+<img src="https://img.shields.io/badge/type:docs-16a34a?style=flat-square" alt="type:docs" /><br/>
+🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 <b>100%</b> complete<br/>
+<sub>Ecosystem hub with quickstarts and documentation</sub>
+</td></tr>
+
+<tr><td>
+<h4>🟢 <a href="https://github.com/AISquare-Studio/aisquare">AISquare SDK</a></h4>
+<img src="https://img.shields.io/badge/status:done-22c55e?style=flat-square" alt="status:done" />
+<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
+<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
+🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 <b>100%</b> complete<br/>
+<sub>Client libraries for direct API integration</sub>
+</td></tr>
+
+<tr><td>
+<h4>🟡 aisquare-examples</h4>
+<img src="https://img.shields.io/badge/status:in_progress-f59e0b?style=flat-square" alt="status:in_progress" />
+<img src="https://img.shields.io/badge/prio:medium-f97316?style=flat-square" alt="prio:medium" />
+<img src="https://img.shields.io/badge/type:docs-16a34a?style=flat-square" alt="type:docs" /><br/>
+🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜ <b>30%</b> complete · 3 done · 7 to do<br/>
+<sub>Runnable governance scenario examples</sub>
+</td></tr>
+
+<tr><td>
+<h4>🔵 aisquare-templates</h4>
+<img src="https://img.shields.io/badge/status:planned-3b82f6?style=flat-square" alt="status:planned" />
+<img src="https://img.shields.io/badge/prio:medium-f97316?style=flat-square" alt="prio:medium" />
+<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ <b>0%</b> complete<br/>
+<sub>Starter scaffolds for governed AI apps</sub>
+</td></tr>
+
+<tr><td>
+<h4>🔵 aisquare-integrations</h4>
+<img src="https://img.shields.io/badge/status:planned-3b82f6?style=flat-square" alt="status:planned" />
+<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
+<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ <b>0%</b> complete<br/>
+<sub>Adapters for LangChain, CrewAI, AutoGen</sub>
+</td></tr>
+
+<tr><td>
+<h4>🟣 Dashboard</h4>
+<img src="https://img.shields.io/badge/status:idea-8b5cf6?style=flat-square" alt="status:idea" />
+<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
+<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
+<sub>Visual interface for audit trail exploration</sub>
+</td></tr>
+
+<tr><td>
+<h4>🟣 Policy Engine v2</h4>
+<img src="https://img.shields.io/badge/status:idea-8b5cf6?style=flat-square" alt="status:idea" />
+<img src="https://img.shields.io/badge/prio:high-ef4444?style=flat-square" alt="prio:high" />
+<img src="https://img.shields.io/badge/type:feat-3b82f6?style=flat-square" alt="type:feat" /><br/>
+<sub>Advanced rule builder for agent constraints</sub>
+</td></tr>
+
+</table>
 
 <br/>
 
