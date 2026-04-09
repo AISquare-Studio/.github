@@ -1,56 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#161b22;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0d1117;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f0883e;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#0b1120;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#101d33;stop-opacity:1" />
     </linearGradient>
   </defs>
 
   <!-- Background -->
   <rect width="1200" height="200" rx="12" fill="url(#bg)" />
 
-  <!-- Accent line top -->
-  <rect x="0" y="0" width="1200" height="3" rx="12" fill="url(#accent)" />
-
-  <!-- Decorative grid dots -->
-  <g fill="#21262d" opacity="0.4">
-    <circle cx="50" cy="50" r="1.5" /><circle cx="100" cy="50" r="1.5" /><circle cx="150" cy="50" r="1.5" />
-    <circle cx="50" cy="100" r="1.5" /><circle cx="100" cy="100" r="1.5" /><circle cx="150" cy="100" r="1.5" />
-    <circle cx="50" cy="150" r="1.5" /><circle cx="100" cy="150" r="1.5" /><circle cx="150" cy="150" r="1.5" />
-    <circle cx="1050" cy="50" r="1.5" /><circle cx="1100" cy="50" r="1.5" /><circle cx="1150" cy="50" r="1.5" />
-    <circle cx="1050" cy="100" r="1.5" /><circle cx="1100" cy="100" r="1.5" /><circle cx="1150" cy="100" r="1.5" />
-    <circle cx="1050" cy="150" r="1.5" /><circle cx="1100" cy="150" r="1.5" /><circle cx="1150" cy="150" r="1.5" />
+  <!-- Subtle decorative hexagons (echoing AISquare logo) -->
+  <g fill="none" stroke="#ffffff" opacity="0.04" stroke-width="1">
+    <polygon points="120,30 145,15 170,30 170,60 145,75 120,60" />
+    <polygon points="80,90 105,75 130,90 130,120 105,135 80,120" />
+    <polygon points="160,100 185,85 210,100 210,130 185,145 160,130" />
+    <polygon points="1000,25 1025,10 1050,25 1050,55 1025,70 1000,55" />
+    <polygon points="1040,75 1065,60 1090,75 1090,105 1065,120 1040,105" />
+    <polygon points="970,85 995,70 1020,85 1020,115 995,130 970,115" />
+    <polygon points="1080,120 1105,105 1130,120 1130,150 1105,165 1080,150" />
   </g>
 
-  <!-- Decorative shapes -->
-  <circle cx="250" cy="60" r="20" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.12" />
-  <rect x="900" y="120" width="35" height="35" rx="6" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.1" transform="rotate(15, 917, 137)" />
-  <circle cx="1000" cy="55" r="15" fill="none" stroke="#f0883e" stroke-width="1" opacity="0.12" />
-
-  <!-- Map icon -->
-  <g transform="translate(460, 40)">
-    <rect x="0" y="0" width="40" height="40" rx="8" fill="none" stroke="url(#accent)" stroke-width="1.5" opacity="0.5" />
-    <!-- Connected nodes representing ecosystem -->
-    <circle cx="10" cy="12" r="4" fill="#58a6ff" opacity="0.8" />
-    <circle cx="30" cy="12" r="4" fill="#7c3aed" opacity="0.8" />
-    <circle cx="20" cy="30" r="4" fill="#f0883e" opacity="0.8" />
-    <line x1="10" y1="12" x2="30" y2="12" stroke="#8b949e" stroke-width="1" opacity="0.4" />
-    <line x1="10" y1="12" x2="20" y2="30" stroke="#8b949e" stroke-width="1" opacity="0.4" />
-    <line x1="30" y1="12" x2="20" y2="30" stroke="#8b949e" stroke-width="1" opacity="0.4" />
+  <!-- AISquare hexagonal logo mark -->
+  <g transform="translate(530, 35)">
+    <!-- Outer hexagon -->
+    <polygon points="20,0 38,10 38,32 20,42 2,32 2,10" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9" />
+    <!-- Inner detail — two interlocking chevrons -->
+    <polyline points="12,26 20,14 28,26" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9" stroke-linejoin="round" />
+    <polyline points="8,20 20,8 32,20" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.5" stroke-linejoin="round" />
   </g>
 
   <!-- Title -->
-  <text x="600" y="115" text-anchor="middle" fill="#e6edf3" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="30" font-weight="bold" letter-spacing="0.5">Explore Our Ecosystem Map</text>
+  <text x="600" y="115" text-anchor="middle" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="30" font-weight="bold" letter-spacing="0.5">Explore Our Ecosystem Map</text>
 
   <!-- Subtitle -->
-  <text x="600" y="150" text-anchor="middle" fill="#8b949e" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="16" letter-spacing="0.3">awesome-aisquare · Quickstarts, guides, integrations &amp; community resources →</text>
+  <text x="600" y="148" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="15" letter-spacing="0.3">awesome-aisquare · Quickstarts, guides, integrations &amp; community resources →</text>
 
-  <!-- Accent line bottom -->
-  <rect x="0" y="197" width="1200" height="3" rx="12" fill="url(#accent)" />
+  <!-- Thin bottom accent line matching navy -->
+  <rect x="400" y="170" width="400" height="1.5" rx="1" fill="#ffffff" opacity="0.1" />
 </svg>
