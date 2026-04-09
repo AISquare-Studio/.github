@@ -129,11 +129,11 @@ We welcome contributions across the entire ecosystem! Look for issues tagged **"
 
 ---
 
-<!-- Ecosystem Map Banner -->
+<!-- Open Source Ecosystem Map Banner -->
 <div align="center">
   <a href="https://github.com/AISquare-Studio/awesome-aisquare">
     <picture>
-      <img src="banner-ecosystem.svg" width="100%" alt="Explore Our Ecosystem Map — awesome-aisquare" />
+      <img src="banner-ecosystem.svg" width="100%" alt="Explore Our Open Source Ecosystem Map — awesome-aisquare" />
     </picture>
   </a>
 </div>
