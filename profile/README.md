@@ -84,12 +84,12 @@
 
 <!-- Row 2: More repos -->
 <div align="center">
-  <a href="https://github.com/AISquare-Studio/django-ais">
-    <img src="pin-django-ais.svg" alt="django-ais" />
+  <a href="https://github.com/AISquare-Studio/aisquare-cli">
+    <img src="pin-aisquare-cli.svg" alt="aisquare-cli" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/AISquare-Studio/aisquare">
-    <img src="pin-aisquare-sdk.svg" alt="aisquare SDK" />
+  <a href="https://github.com/AISquare-Studio/pipe">
+    <img src="pin-pipe.svg" alt="pipe" />
   </a>
 </div>
 
@@ -118,9 +118,8 @@ We welcome contributions across the entire ecosystem! Look for issues tagged **"
 | Channel | Link |
 |:--------|:-----|
 | 📖 **Documentation** | [docs.aisquare.studio](https://docs.aisquare.studio) |
-| 🔌 **API Reference** | [docs.aisquare.studio/api-reference](https://docs.aisquare.studio/api-reference) |
+| 🔌 **API Reference** | [docs.aisquare.studio/docs/api-reference](https://docs.aisquare.studio/docs/api-reference/overview) |
 | 🌐 **Website** | [aisquare.studio](https://aisquare.studio) |
-| 💬 **Discussions** | [GitHub Discussions](https://github.com/orgs/AISquare-Studio/discussions) |
 | 💡 **Feedback** | [feedback.aisquare.studio](https://feedback.aisquare.studio) |
 | 🔒 **Security** | [Responsible Disclosure](https://github.com/AISquare-Studio/awesome-aisquare/blob/main/SECURITY.md) |
 | ✉️ **Email** | [bots@aisquare.com](mailto:bots@aisquare.com) |
