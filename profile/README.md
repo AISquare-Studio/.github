@@ -52,11 +52,11 @@
   <tr>
     <td width="50%" valign="top">
       <h3 align="center">⚙️ Agent Orchestration</h3>
-      <p align="center">Django-native framework for agentic workflows — DB-based job management, YAML pipelines, real-time event streaming.</p>
+      <p align="center">One terminal over your coding agents — a manager agent plans and runs coders, testers and reviewers, with memory that persists across sessions.</p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🔌 SDK & Integrations</h3>
-      <p align="center">Client libraries and adapters for LangChain, CrewAI, AutoGen — plug governance into your existing stack.</p>
+      <h3 align="center">🔌 Connectors</h3>
+      <p align="center">Anything-to-anything connector framework — one Source or Sink per service instead of N² bespoke integrations.</p>
     </td>
   </tr>
 </table>
