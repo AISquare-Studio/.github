@@ -52,11 +52,11 @@
   <tr>
     <td width="50%" valign="top">
       <h3 align="center">⚙️ Agent Orchestration</h3>
-      <p align="center">Django-native framework for agentic workflows — DB-based job management, YAML pipelines, real-time event streaming.</p>
+      <p align="center">One terminal over your coding agents — a manager agent plans and runs coders, testers and reviewers, with memory that persists across sessions.</p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🔌 SDK & Integrations</h3>
-      <p align="center">Client libraries and adapters for LangChain, CrewAI, AutoGen — plug governance into your existing stack.</p>
+      <h3 align="center">🔌 Connectors</h3>
+      <p align="center">Anything-to-anything connector framework — one Source or Sink per service instead of N² bespoke integrations.</p>
     </td>
   </tr>
 </table>
@@ -84,12 +84,12 @@
 
 <!-- Row 2: More repos -->
 <div align="center">
-  <a href="https://github.com/AISquare-Studio/django-ais">
-    <img src="pin-django-ais.svg" alt="django-ais" />
+  <a href="https://github.com/AISquare-Studio/aisquare-cli">
+    <img src="pin-aisquare-cli.svg" alt="aisquare-cli" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/AISquare-Studio/aisquare">
-    <img src="pin-aisquare-sdk.svg" alt="aisquare SDK" />
+  <a href="https://github.com/AISquare-Studio/pipe">
+    <img src="pin-pipe.svg" alt="pipe" />
   </a>
 </div>
 
@@ -118,9 +118,8 @@ We welcome contributions across the entire ecosystem! Look for issues tagged **"
 | Channel | Link |
 |:--------|:-----|
 | 📖 **Documentation** | [docs.aisquare.studio](https://docs.aisquare.studio) |
-| 🔌 **API Reference** | [docs.aisquare.studio/api-reference](https://docs.aisquare.studio/api-reference) |
+| 🔌 **API Reference** | [docs.aisquare.studio/docs/api-reference](https://docs.aisquare.studio/docs/api-reference/overview) |
 | 🌐 **Website** | [aisquare.studio](https://aisquare.studio) |
-| 💬 **Discussions** | [GitHub Discussions](https://github.com/orgs/AISquare-Studio/discussions) |
 | 💡 **Feedback** | [feedback.aisquare.studio](https://feedback.aisquare.studio) |
 | 🔒 **Security** | [Responsible Disclosure](https://github.com/AISquare-Studio/awesome-aisquare/blob/main/SECURITY.md) |
 | ✉️ **Email** | [bots@aisquare.com](mailto:bots@aisquare.com) |
